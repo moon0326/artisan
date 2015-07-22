@@ -1,5 +1,5 @@
 {
-    "name": "moon0326/artisan",
+    "name": "moon/artisan",
     "Description": "Laravel Artisan as a Package",
     "require": {
         "laravel/framework": "5.1.*"
