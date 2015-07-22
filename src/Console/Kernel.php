@@ -21,8 +21,10 @@ class Kernel extends ConsoleKernel
 
     public function __construct(Application $app, Dispatcher $events)
     {
-        $config = include_once getcwd().'/Commands/config.php';
-        if ($config) {
+        $configFile = getcwd().'/Commands/config.php';
+
+        if (file_exists($configFile)) {
+            $config = require_once $configFile;
             $this->commands = array_merge($this->commands, $config['commands']);
         }
 
