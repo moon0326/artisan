@@ -22,8 +22,10 @@ class Init extends Command
 
     public function handle()
     {
-        $cwd = getcwd().'/Commands';
+        $runningFrom = getcwd();
+        $cwd = $runningFrom.'/Commands';
         $configFile = $cwd.'/config.php';
+        $artisan = $runningFrom.'/artisan';
 
         if (!is_dir($cwd)) {
             mkdir($cwd);
@@ -37,6 +39,10 @@ class Init extends Command
             $this->info("Created {$configFile}");
         } else {
             $this->comment("{$cwd} already exists.");
+        }
+
+        if (!$file_exists($artisan)) {
+            copy(__DIR__.'/../../../artisan', $artisan);
         }
     }
 }

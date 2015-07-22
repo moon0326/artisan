@@ -1,7 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__."/../../autoload.php";
+$fromPackage = __DIR__."/../../autoload.php";
+
+if (file_exists($fromPackage)) {
+    require_once $fromPackage;
+} else {
+    require_once "./vendor/autoload.php";
+}
 
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
