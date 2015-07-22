@@ -20,7 +20,7 @@
     },
     "scripts": {
         "post-install": [
-            "php vendor/moon/artisan/artisan artisan:init"
+            "./vendor/moon/artisan/artisan artisan:init"
         ]
     },
     "minimum-stability": "stable"
