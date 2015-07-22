@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+require_once __DIR__."/../../autoload.php";
+
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
@@ -26,7 +28,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 | or another output device for the developers. Here goes nothing!
 |
 */
-$app = new Moon\\Artisan\Stub\Application;
+$app = new Moon\Artisan\Stub\Application;
 $app->singleton(
     'Illuminate\Contracts\Debug\ExceptionHandler',
     'Moon\\Artisan\Exceptions\Handler'
