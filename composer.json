@@ -18,10 +18,7 @@
         "psr-4": {
             "Moon\\Artisan\\": "./src/",
             "Illuminate\\Foundation\\Console\\": "./illuminate/Foundation/Console/"
-        },
-        "files": [
-            "./vendor/illuminate/support/helpers.php"
-        ]
+        }
     },
     "minimum-stability": "stable"
 }
