@@ -21,7 +21,7 @@ class Kernel extends ConsoleKernel
 
     public function __construct(Application $app, Dispatcher $events)
     {
-        $configFile = getcwd().'/Commands/config.php';
+        $configFile = getcwd().'/artisan-config.php';
 
         if (file_exists($configFile)) {
             $config = require_once $configFile;

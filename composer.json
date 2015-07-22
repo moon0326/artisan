@@ -5,7 +5,8 @@
         "php": ">=5.5.9",
         "illuminate/contracts": "5.1.1",
         "illuminate/container": "5.1.1",
-        "illuminate/console": "5.1.1"
+        "illuminate/console": "5.1.1",
+        "illuminate/support": "5.1.1"
     },
     "authors": [
         {
@@ -17,7 +18,10 @@
         "psr-4": {
             "Moon\\Artisan\\": "./src/",
             "Illuminate\\Foundation\\Console\\": "./illuminate/Foundation/Console/"
-        }
+        },
+        "files": [
+            "./vendor/illuminate/support/helpers.php"
+        ]
     },
     "minimum-stability": "stable"
 }

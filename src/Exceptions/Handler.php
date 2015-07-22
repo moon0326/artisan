@@ -5,12 +5,14 @@ namespace Moon\Artisan\Exceptions;
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Symfony\Component\Console\Application as ConsoleApplication;
+use Moon\Artisan\Artisan;
 
 class Handler implements ExceptionHandler
 {
     public function renderForConsole($output, Exception $e)
     {
-        $output->setVerbosity(4);
+        $config = Artisan::getConfig();
+        $output->setVerbosity($config['verbosity']);
         (new ConsoleApplication())->renderException($e, $output);
     }
 

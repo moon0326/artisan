@@ -3,6 +3,7 @@
 namespace Moon\Artisan\Console\Commands;
 
 use Illuminate\Console\Command;
+use Moon\Artisan\Artisan;
 
 class Init extends Command
 {
@@ -18,25 +19,18 @@ class Init extends Command
      *
      * @var string
      */
-    protected $description = '';
+    protected $description = 'Creates config file';
 
     public function handle()
     {
         $runningFrom = getcwd();
-        $cwd = $runningFrom.'/Commands';
-        $configFile = $cwd.'/config.php';
+        $configFilePath = Artisan::getConfigFilePath();
+
         $artisan = $runningFrom.'/artisan';
 
-        if (!is_dir($cwd)) {
-            mkdir($cwd);
-            $this->info("Created {$cwd}");
-        } else {
-            $this->comment("{$cwd} already exists.");
-        }
-
-        if (!file_exists($configFile)) {
-            copy(__DIR__.'/../../config.php', $configFile);
-            $this->info("Created {$configFile}");
+        if (!file_exists($configFilePath)) {
+            copy(__DIR__.'/../../config.php', $configFilePath);
+            $this->info("Created {$configFilePath}");
         } else {
             $this->comment("{$cwd} already exists.");
         }
