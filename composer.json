@@ -18,5 +18,10 @@
             "Moon\\Artisan\\": "src/"
         }
     },
+    "scripts": {
+        "post-install": [
+            "php vendor/moon/artisan/artisan artisan:init"
+        ]
+    },
     "minimum-stability": "stable"
 }
