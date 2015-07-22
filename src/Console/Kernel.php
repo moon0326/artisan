@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         'Moon\Artisan\Console\Commands\Init',
+        'Illuminate\Foundation\Console\ConsoleMakeCommand',
     ];
 
     public function __construct(Application $app, Dispatcher $events)

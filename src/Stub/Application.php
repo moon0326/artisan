@@ -4,9 +4,15 @@ namespace Moon\Artisan\Stub;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Moon\Artisan\Artisan;
 
 class Application extends Container implements ApplicationContract
 {
+    public function getNamespace()
+    {
+        return 'Artisan';
+    }
+
     public function loadDeferredProviders()
     {
     }

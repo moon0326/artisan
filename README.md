@@ -4,5 +4,8 @@ If you ever wnated to use Laravel Artisan commands outside of Laravel, this pack
 
 ## Installation
 1. Run ```composer require moon/artisan:dev-master```
-2. Run ```./vendor/moon/artisan/artisan artisan:init```. This command creates **Commands** directory and ***config.php*** file.
+2. Run ```./vendor/moon/artisan/artisan artisan:init```. This command reates ***artisan-config.php** and **artisan** in your root directory.
+
+## Post Installation
+
 

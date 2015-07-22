@@ -40,6 +40,9 @@ $app->singleton(
     'Moon\\Artisan\Exceptions\Handler'
 );
 
+$app->instance('path', getcwd());
+
+
 $kernel = new Moon\Artisan\Console\Kernel(
     $app,
     new Moon\Artisan\Stub\Dispatcher()
