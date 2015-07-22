@@ -41,7 +41,7 @@ class Init extends Command
             $this->comment("{$cwd} already exists.");
         }
 
-        if (!$file_exists($artisan)) {
+        if (!file_exists($artisan)) {
             copy(__DIR__.'/../../../artisan', $artisan);
         }
     }
