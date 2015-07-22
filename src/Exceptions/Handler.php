@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisan\Exceptions;
+namespace Moon\Artisan\Exceptions;
 
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;

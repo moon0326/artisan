@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisan\Stub;
+namespace Moon\Artisan\Stub;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;

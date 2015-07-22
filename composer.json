@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Artisan\\": "src/"
+            "Moon\\Artisan\\": "src/"
         }
     },
     "minimum-stability": "stable"

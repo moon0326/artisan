@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisan\Console\Commands;
+namespace Moon\Artisan\Console\Commands;
 
 use Illuminate\Console\Command;
 

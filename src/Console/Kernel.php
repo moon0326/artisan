@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisan\Console;
+namespace Moon\Artisan\Console;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Foundation\Application;
@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        'Artisan\Console\Commands\Init',
+        'Moon\Artisan\Console\Commands\Init',
     ];
 
     public function __construct(Application $app, Dispatcher $events)
