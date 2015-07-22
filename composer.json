@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Moon\\Artisan\\": "./vendor/moon/artisan/src/",
+            "Moon\\Artisan\\": "./src/",
             "Illuminate\\Foundation\\Console\\": "./illuminate/Foundation/Console/"
         }
     },
