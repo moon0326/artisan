@@ -2,8 +2,11 @@
     "name": "moon/artisan",
     "Description": "Laravel Artisan as a Package",
     "require": {
-        "laravel/framework": "5.1.*"
-    },
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.1.1",
+        "illuminate/container": "5.1.1",
+        "illuminate/console": "5.1.1"
+    }
     "authors": [
         {
             "name": "moon0326",
@@ -15,7 +18,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Moon\\Artisan\\": "src/"
+            "Moon\\Artisan\\": "./vendor/moon/artisan/src/",
+            "Illuminate\\Foundation\\Console\\": "./illuminate/Foundation/Console/"
         }
     },
     "minimum-stability": "stable"
