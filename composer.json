@@ -6,7 +6,8 @@
         "illuminate/contracts": "5.1.1",
         "illuminate/container": "5.1.1",
         "illuminate/console": "5.1.1",
-        "illuminate/support": "5.1.1"
+        "illuminate/support": "5.1.1",
+        "illuminate/filesystem": "5.1.1"
     },
     "authors": [
         {
