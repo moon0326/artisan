@@ -1,0 +1,22 @@
+{
+    "name": "moon0326/artisan",
+    "require": {
+        "laravel/framework": "5.1.*"
+    },
+    "authors": [
+        {
+            "name": "moon0326",
+            "email": "kmk1986@gmail.com"
+        }
+    ],
+    "bin": [
+        "artisan"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Artisan\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+
+}
