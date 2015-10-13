@@ -1,6 +1,6 @@
 ## Laravel Artisan as a Package
 
-Laravel Artisan is not available as a composer package. This package makes it easy to use Laravel Artisan as a composer package.
+Laravel Artisan is not available as a composer package. You can use Laravel Artisan in your project with this package.
 
 ## Installation
 1. Run ```composer require moon/artisan```
