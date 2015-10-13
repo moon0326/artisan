@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Foundation\Console;
+namespace Moon\Illuminate\Foundation\Console;
 
 use Exception;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -51,9 +51,8 @@ class Kernel implements KernelContract
     /**
      * Create a new console kernel instance.
      *
-     * @param  \Illuminate\Contracts\Foundation\Application  $app
-     * @param  \Illuminate\Contracts\Events\Dispatcher  $events
-     * @return void
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     * @param \Illuminate\Contracts\Events\Dispatcher      $events
      */
     public function __construct(Application $app, Dispatcher $events)
     {
@@ -67,13 +66,11 @@ class Kernel implements KernelContract
 
     /**
      * Define the application's command schedule.
-     *
-     * @return void
      */
     protected function defineConsoleSchedule()
     {
         $this->app->instance(
-            'Illuminate\Console\Scheduling\Schedule', $schedule = new Schedule
+            'Illuminate\Console\Scheduling\Schedule', $schedule = new Schedule()
         );
 
         $this->schedule($schedule);
@@ -82,8 +79,9 @@ class Kernel implements KernelContract
     /**
      * Run the console application.
      *
-     * @param  \Symfony\Component\Console\Input\InputInterface  $input
-     * @param  \Symfony\Component\Console\Output\OutputInterface  $output
+     * @param \Symfony\Component\Console\Input\InputInterface   $input
+     * @param \Symfony\Component\Console\Output\OutputInterface $output
+     *
      * @return int
      */
     public function handle($input, $output = null)
@@ -104,9 +102,8 @@ class Kernel implements KernelContract
     /**
      * Terminate the application.
      *
-     * @param  \Symfony\Component\Console\Input\InputInterface  $input
-     * @param  int  $status
-     * @return void
+     * @param \Symfony\Component\Console\Input\InputInterface $input
+     * @param int                                             $status
      */
     public function terminate($input, $status)
     {
@@ -116,8 +113,7 @@ class Kernel implements KernelContract
     /**
      * Define the application's command schedule.
      *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
+     * @param \Illuminate\Console\Scheduling\Schedule $schedule
      */
     protected function schedule(Schedule $schedule)
     {
@@ -127,8 +123,9 @@ class Kernel implements KernelContract
     /**
      * Run an Artisan console command by name.
      *
-     * @param  string  $command
-     * @param  array  $parameters
+     * @param string $command
+     * @param array  $parameters
+     *
      * @return int
      */
     public function call($command, array $parameters = [])
@@ -146,9 +143,8 @@ class Kernel implements KernelContract
     /**
      * Queue the given console command.
      *
-     * @param  string  $command
-     * @param  array   $parameters
-     * @return void
+     * @param string $command
+     * @param array  $parameters
      */
     public function queue($command, array $parameters = [])
     {
@@ -183,8 +179,6 @@ class Kernel implements KernelContract
 
     /**
      * Bootstrap the application for HTTP requests.
-     *
-     * @return void
      */
     public function bootstrap()
     {
@@ -223,8 +217,7 @@ class Kernel implements KernelContract
     /**
      * Report the exception to the exception handler.
      *
-     * @param  \Exception  $e
-     * @return void
+     * @param \Exception $e
      */
     protected function reportException(Exception $e)
     {
@@ -234,9 +227,8 @@ class Kernel implements KernelContract
     /**
      * Report the exception to the exception handler.
      *
-     * @param  \Symfony\Component\Console\Output\OutputInterface  $output
-     * @param  \Exception  $e
-     * @return void
+     * @param \Symfony\Component\Console\Output\OutputInterface $output
+     * @param \Exception                                        $e
      */
     protected function renderException($output, Exception $e)
     {

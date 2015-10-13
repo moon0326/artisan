@@ -4,7 +4,7 @@ namespace Moon\Artisan\Console;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Moon\Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
@@ -17,7 +17,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         'Moon\Artisan\Console\Commands\Init',
-        'Illuminate\Foundation\Console\ConsoleMakeCommand',
+        'Moon\Illuminate\Foundation\Console\ConsoleMakeCommand',
     ];
 
     public function __construct(Application $app, Dispatcher $events)
