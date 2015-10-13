@@ -1,6 +1,6 @@
 ## Laravel Artisan as a Package
 
-This package let you use the Laravel Artisan commands outside of the Laravel ecosystem.
+Laravel Artisan is not available as a composer package. This package makes it easy to use Laravel Artisan as a composer package.
 
 ## Installation
 1. Run ```composer require moon/artisan```
@@ -8,9 +8,7 @@ This package let you use the Laravel Artisan commands outside of the Laravel eco
 
 ## Usage
 
-Usage is simliar to Laravel, except that you need to add command classes to **artisan-config.php** instead of **Kernel.php**git che
-
 * Run ```php artisan make:console command-name``` to create a new command. 
-* When you create a new command, it will have **Artisan\Console\Commands** namespace. If you add run ```php artisan make:console Hello```, you will get a ***Artisan\Console\Commands\Hello*** as fully qualified class name. 
+* When you create a new command, it will have **Artisan\Console\Commands** namespace. For example, if you run ```php artisan make:console Hello```, you will get ***Artisan\Console\Commands\Hello*** as a fully qualified class name. 
 * Add the fully qualified class name to ***artisan-config.php***
 * Run ```php artisan list``` to confirm.
