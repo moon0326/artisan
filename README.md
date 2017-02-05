@@ -14,4 +14,4 @@ Laravel Artisan is not available as a composer package. You can use Laravel Arti
 * Add the fully qualified class name to ***artisan-config.php***
 * Run ```php artisan list``` to confirm.
 
-For general usage, please refer to Artisan documentation at http://laravel.com/docs/5.1/artisan
+For general usage, please refer to Artisan documentation at http://laravel.com/docs/5.2/artisan
