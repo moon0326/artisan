@@ -3,11 +3,11 @@
     "Description": "Laravel Artisan as a Package",
     "require": {
         "php": ">=5.5.9",
-        "illuminate/contracts": "5.3.*",
-        "illuminate/container": "5.3.*",
-        "illuminate/console": "5.3.*",
-        "illuminate/support": "5.3.*",
-        "illuminate/filesystem": "5.3.*"
+        "illuminate/contracts": "5.4.*",
+        "illuminate/container": "5.4.*",
+        "illuminate/console": "5.4.*",
+        "illuminate/support": "5.4.*",
+        "illuminate/filesystem": "5.4.*"
     },
     "authors": [
         {
