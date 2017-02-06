@@ -2,6 +2,17 @@
 
 Laravel Artisan is not available as a composer package. You can use Laravel Artisan in your project with this package.
 
+## Laravel Versions
+
+| Larave | This Package |
+|--------|--------|
+| 5.4 | v1.7 |
+| 5.3 | v1.6 |
+| 5.2 | v1.5 |
+| 5.1 | v1.4 |
+
+
+
 ## Installation
 1. Run ```composer require moon/artisan```
 2. Run ```./vendor/moon/artisan/artisan artisan:init```. This command creates **artisan-config.php** and **artisan** in your root directory.
