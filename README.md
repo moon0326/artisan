@@ -4,7 +4,7 @@ Laravel Artisan is not available as a composer package. You can use Laravel Arti
 
 ## Laravel Versions
 
-| Larave | This Package |
+| Laravel | This Package |
 |--------|--------|
 | 5.4 | v1.7 |
 | 5.3 | v1.6 |
