@@ -279,4 +279,17 @@ class Dispatcher implements DispatcherContract
     public function setQueueResolver(callable $resolver)
     {
     }
+
+	/**
+	 * Fire an event until the first non-null response is returned.
+	 *
+	 * @param  string|object $event
+	 * @param  mixed         $payload
+	 * @param  bool          $halt
+	 *
+	 * @return array|null
+	 */
+	public function dispatch($event, $payload = [], $halt = false)
+	{
+	}
 }
