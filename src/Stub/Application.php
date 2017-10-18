@@ -131,4 +131,23 @@ class Application extends Container implements ApplicationContract
     public function getCachedServicesPath()
     {
     }
+
+    /**
+     * Determine if we are running in the console.
+     *
+     * @return bool
+     */
+    public function runningInConsole()
+    {
+        return true;
+    }
+
+    /**
+     * Get the path to the cached packages.php file.
+     *
+     * @return string
+     */
+    public function getCachedPackagesPath()
+    {
+    }
 }
