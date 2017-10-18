@@ -120,6 +120,7 @@ $RECYCLE.BIN/
 
 ### Composer ###
 composer.phar
+composer.lock
 vendor/
 
 
