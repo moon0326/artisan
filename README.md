@@ -6,6 +6,7 @@ Laravel Artisan is not available as a composer package. You can use Laravel Arti
 
 | Laravel | This Package | Installation |
 |--------|--------|----------|
+| 5.5 | v1.9 | composer require moon/artisan:v1.9 |
 | 5.4 | v1.7 | composer require moon/artisan:v1.7 |
 | 5.3 | v1.6 | composer require moon/artisan:v1.6 |
 | 5.2 | v1.5 | composer require moon/artisan:v1.5 |

@@ -2,12 +2,12 @@
     "name": "segadora/artisan",
     "Description": "Laravel Artisan as a Package",
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/contracts": "5.4.*",
-        "illuminate/container": "5.4.*",
-        "illuminate/console": "5.4.*",
-        "illuminate/support": "5.4.*",
-        "illuminate/filesystem": "5.4.*"
+        "php": ">=7.0.0",
+        "illuminate/contracts": "5.5.*",
+        "illuminate/container": "5.5.*",
+        "illuminate/console": "5.5.*",
+        "illuminate/support": "5.5.*",
+        "illuminate/filesystem": "5.5.*"
     },
     "authors": [
         {
