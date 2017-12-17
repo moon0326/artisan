@@ -8,6 +8,18 @@ use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 class Dispatcher implements DispatcherContract
 {
     /**
+     * Dispatch an event and call the listeners.
+     *
+     * @param  string|object  $event
+     * @param  mixed  $payload
+     * @param  bool  $halt
+     * @return array|null
+     */
+    public function dispatch($event, $payload = [], $halt = false)
+    {
+    }
+
+    /**
      * Register an event listener with the dispatcher.
      *
      * @param string|array $events
